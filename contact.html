@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Cwang's Portfolio: Contact</title>
+      <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico"/>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+
+   <body>
+
+     <!-- Sticky navbar -->
+     <nav role=navigation class="top-nav" aria-label="Navbar" role="navigation">
+       <ul>
+         <li><a tabindex=1 href="index.html">Home</a></li>
+         <li><a tabindex=2 href="resume.html">Resume</a></li>
+         <li><a tabindex=3 href="bio.html">Bio</a></li>
+         <!-- Dropdown -->
+         <li>
+           <a tabindex=4 href="projects.html" aria-haspopup="true" aria-expanded="false">Projects</a>
+           <ul class="pulldown-menu">
+             <li><a href="projects.html#me433-project-anchor">ME433 Inclinometer</a></li>
+             <li><a href="projects.html#nico102-project-anchor">NICO102 Data Project</a></li>
+             <li><a href="projects.html#me449-project-anchor">ME449 Mobile Manipulation</a></li>
+           </ul>
+         </li>
+         <li nav aria-current=page> <a tabindex=5 href="contact.html">Contact Me (Data Collection)</a></li>
+       </ul>
+     </nav>
+
+
+     <!-- Page content -->
+     <main role="main">
+       <div aria-label="title">
+         <h1>Contact me!</h1>
+         <hr>
+       </div>
+
+       <div aria-label="Contact info">
+         <p>Email: coreywang2023 [at] u [dot] northwestern [dot] com</p>
+         <p>Linkedin: <a href="http://www.linkedin.com/in/corey-wang">Link</a></p>
+       </div>
+
+       <hr>
+
+       <h1>Or fill out this form below so I can contact you!</h1>
+       <p>Don't worry, submission doesn't actually send data anywhere!</p>
+
+       <!-- Form -->
+       <div id="form" aria-label="Data collection form">
+         <div id="form-inside">
+           <form>
+             <!-- First name -->
+             <p>First name (must be 5 letters, if your name doesn't match sucks to be you!):</p>
+             <input type="text" placeholder="Enter your first name" pattern="[A-Za-z]{5}" required aria-labelledby="fnameDesc"><br>
+             <span id="fnameDesc">Must be 5 letters, no other names allowed!</span>
+             <!-- Email address -->
+             <p>Email address:</p>
+             <input type="email" placeholder="Enter your email" required aria-labelledby="emailDesc"><br>
+             <span id="emailDesc">Must match standard email form</span>
+             <!-- Phone number -->
+             <p>Phone:</p>
+             <input type="text" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required aria-labelledby="emailDesc"><br>
+             <span id="emailDesc">Must be in the form XXX-XXX-XXXX, no country code</span>
+             <!-- Reason for contacting me -->
+             <p>What is your reason for filling out this form?</p>
+             <input type="radio" id="school" name="reason" value="school">
+              <label for="school">School</label><br>
+              <input type="radio" id="work" name="reason" value="work">
+              <label for="work">Work</label><br>
+              <input type="radio" id="Other" name="reason" value="other">
+              <label for="other">Other</label><br><br>
+              <!-- Random dropdown question -->
+              Which is your favorite food?
+              <select name="food">
+                <option value="pizza">Pizza</option>
+                <option value="burgers">Burgers</option>
+                <option value="tacos">Tacos</option>
+              </select>
+              <br>
+              <br>
+              <!-- Submit -->
+              <input type="submit" value="Submit">
+              <br>
+              <br>
+           </form>
+         </div>
+       </div>
+
+     </main>
+
+
+   </body>
+</html>

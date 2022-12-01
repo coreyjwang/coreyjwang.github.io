@@ -1,0 +1,137 @@
+/* Change font */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+/* Hide navbar link styling */
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav.top-nav {
+  background-color: #c8d8e8;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+nav [aria-current=page] {
+  background-color: #bbb;
+  color: #000;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
+nav.top-nav li {
+  display: inline-block;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0 30px 0 0;
+  user-select: none;
+}
+
+nav.top-nav li:hover {
+  text-decoration: underline;
+}
+
+nav.top-nav ul {
+  list-style: none;
+}
+
+nav.top-nav .pulldown-menu {
+  display: none;
+  position: absolute;
+  border: 1px solid white;
+  background-color: silver;
+}
+
+nav.top-nav .pulldown-menu li{
+  display: block;
+  margin-top: 10px;
+  margin-left: -30px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+nav.top-nav li:hover .pulldown-menu {
+  display: block;
+}
+
+main {
+  margin-top: 80px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+/* Two column layout */
+.project {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+.project-showcase {
+  width: 100%;
+  overflow: hidden;
+}
+.left-panel {
+  width: 50%;
+  float: left;
+}
+.right-panel {
+  margin-left: 55%;
+}
+
+
+/* Anchor for hyperlinks */
+a.anchor {
+    position: relative;
+    top:-80px;
+    visibility: hidden;
+}
+
+
+/* Make images automatically scale to screen size */
+#family-pic {
+  margin: auto;
+  display: block;
+  width: 60%;
+  height: 40%;
+}
+.project-image {
+  border: 2px solid black;
+  width: 80%;
+  height: 60%;
+}
+.project-video {
+  border: 2px solid black;
+  width: 80%;
+  height: 60%;
+}
+
+
+/* Calendar scaling */
+#calendar {
+  width: 100%;
+  height: 600px;
+}
+
+/* Border around data collection form */
+#form {
+  border-style: solid;
+  border-width: 1px;
+  border: solid black:
+}
+#form #form-inside {
+  margin-left: 10px;
+}
+
+span {
+  font-size: 13px;
+  color: blue;
+}

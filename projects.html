@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Cwang's Portfolio: Projects</title>
+      <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.ico"/>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+
+   <body>
+
+     <!-- Sticky navbar -->
+     <nav role=navigation class="top-nav" aria-label="Navbar" role="navigation">
+       <ul>
+         <li><a tabindex=1 href="index.html">Home</a></li>
+         <li><a tabindex=2 href="resume.html">Resume</a></li>
+         <li><a tabindex=3 href="bio.html">Bio</a></li>
+         <!-- Dropdown -->
+         <li nav aria-current=page>
+           <a tabindex=4 href="projects.html" aria-haspopup="true" aria-expanded="false">Projects</a>
+           <ul class="pulldown-menu">
+             <li><a href="projects.html#me433-project-anchor">ME433 Inclinometer</a></li>
+             <li><a href="projects.html#nico102-project-anchor">NICO102 Data Project</a></li>
+             <li><a href="projects.html#me449-project-anchor">ME449 Mobile Manipulation</a></li>
+           </ul>
+         </li>
+         <li> <a tabindex=5 href="contact.html">Contact Me (Data Collection)</a></li>
+       </ul>
+     </nav>
+
+     <main role="main">
+       <div aria-label="title">
+         <h1>Projects</h1>
+         <p>
+           Below you can find some of the projects I have worked on. All of my projects can be seen by
+           scrolling down this page, however navigating to a specific project from the navbar will bring the user
+           to corresponding section of the page.
+         </p>
+         <p>
+           For projects on github, the title of the project is a link to the github page.
+         </p>
+         <hr>
+       <div aria-label="title">
+
+       <!-- First project -->
+       <div class="project" aria-label="Project 1">
+          <a class="anchor" id="me433-project-anchor"></a>
+          <div class="left-panel">
+
+            <h2><a href="https://github.com/coreyjwang/ME433/tree/main/HW11">ME433 Inclinometer</a></h2>
+
+            <strong>Overview:</strong>
+            <p>This was a class project for the class ME433, in which I wired and programmed a simple
+              inclinometer, which is a device that measures slope. This device would read the slope and
+              write the data to the LCD screen, which would then display the direction.
+            </p>
+
+            <p>An image of the inclinometer in use is included to the right</p>
+
+            <strong>Relevant tools/technologies/skills:</strong>
+            <p>NU32 development board (PIC32 microcontroller),
+              embedded C,
+              MPLab X IDE, interfacing with LCD, SPI, I2C, breadboard.
+            </p>
+
+
+          </div>
+
+          <div class="right-panel">
+            <img class="project-image" src="assets/images/inclinometer.png" alt="Inclinometer breadboard"></img>
+          </div>
+
+       </div>
+
+       <hr>
+
+       <!-- Second project -->
+       <div class="project" aria-label="Project 2">
+          <a class="anchor" id="nico102-project-anchor"></a>
+          <div class="left-panel">
+            <h2><a href="https://github.com/coreyjwang/NICO102-Project-F20/blob/master/main.ipynb">NICO102 Data Project</a></h2>
+
+            <p>This was a class project for the class NICO102, in which I analyzed some data taken from
+              a Kaggle dataset. The dataset contained data from real-life soccer stats as well as some
+              data taken from the FIFA game franchise. The class was an introduction to programming for
+              big data using Python, so the project consisted primarily of using the Python libraries
+              Pandas and Matplotlib to process, clean, and visualize the data from the dataset. Least squares
+              regression was also done for some of the data.
+            </p>
+
+            <p>An example of one of the generated plots is displayed to the right.</p>
+
+            <strong>Tools/technologies:</strong>
+            <p>Python, Matplotlib, data processing.
+            </p>
+
+          </div>
+
+          <div class="right-panel">
+            <img class="project-image" src="assets/images/wage_age_scatterplot.png" alt="Scatterplot image"></img>
+          </div>
+
+       </div>
+
+
+       <hr>
+
+       <!-- Third project -->
+       <div class="project" aria-label="Project 3">
+          <a class="anchor" id="me449-project-anchor"></a>
+          <div class="left-panel">
+
+            <h2>ME449 Mobile Manipulation</h2>
+            <p>This was a class project for the class ME449: Robotic Manipulation, in which I
+              wrote python code using the Modern Robotics library in order to plan the trajectory
+              for the end-effector of a simulated youBot. The youBot is a robot with a mobile base
+              and a 5R robot arm, which was simulated in the CoppeliaSim software for this class.
+            </p>
+
+            <p>A video demo of the final project is shown to the right.</p>
+
+            <strong>Tools/technologies:</strong>
+            <p>Python, kinematics, odometry, trajectory planning, feedback control.
+            </p>
+
+          </div>
+
+          <div class="right-panel">
+            <video class="project-video" controls>
+              <source src="assets/images/best_video_demo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+       </div>
+
+
+       <hr>
+
+
+       <!-- Fourth project -->
+       <div class="project" aria-label="Project 4">
+          <a class="anchor" id="placeholder1-project-anchor"></a>
+          <div class="left-panel">
+
+            <h2>Placeholder project</h2>
+            <p>Placeholder for future project(s). It does not have a link yet.
+            </p>
+
+            <br><br><br><br><br>
+
+            <p>A video demo of the project is shown to the right.</p>
+
+            <strong>Tools/technologies:</strong>
+            <p>Python
+            </p>
+
+          </div>
+
+          <div class="right-panel">
+            <img class="project-image" src="" alt="Placeholder image"></img>
+          </div>
+
+       </div>
+
+
+       <hr>
+
+
+     </main>
+
+   </body>
+</html>
